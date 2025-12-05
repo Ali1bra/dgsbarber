@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DGSBarber</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="images/coming_soon.png" type="image/x-icon">
+    
+</head>
+<body>
+
+    <div class="coming_soon">
+        <h1>COMING SOON</h1>
+        <P>stay tuned <span class="dots"></span></P>
+    </div>
+</body>
+</html>
+
+<script>
+  const dots = document.querySelector(".dots");
+let count = 0;
+
+setInterval(() => {
+    count++;                 // tilføj et dot
+    if (count > 3) count = 0; // reset efter 3
+
+    dots.textContent = ".".repeat(count); // skriv det rigtige antal dots
+}, 1000); // hvert 3. sekund
+
+
+</script>
