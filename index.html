@@ -22,11 +22,12 @@
 let count = 0;
 
 setInterval(() => {
-    count++;                 // tilføj et dot
-    if (count > 3) count = 0; // reset efter 3
+    count++;                 // tilføjer et punktum
+    if (count > 3) count = 0; // når den har tilføjet 3 så count 0
 
-    dots.textContent = ".".repeat(count); // skriv det rigtige antal dots
-}, 1000); // hvert 3. sekund
+    dots.textContent = ".".repeat(count); // repeat betyder gange med "."
+}, 500); // hvert .5 sekund
+
 
 
 </script>
